@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
-import { furnitureBestDeals, homeDecor } from '../data/mockData';
+import { furnitureBestDeals, homeDecor, furnitureBannerCardImages } from '../data/mockData';
 
 const SectionColumn = ({ title, items, hasButton = true }) => {
     return (
@@ -74,13 +74,13 @@ const FurnitureDeals = ({
 
                         <div className="flex gap-2 items-end mb-16 relative z-10 justify-between">
                             <div className="w-1/3 h-[100px] bg-white rounded-lg shadow-sm flex items-center justify-center overflow-hidden">
-                                <img src="https://loremflickr.com/150/100/sofa,living-room" className="object-contain h-full" alt="Modern sofa" />
+                                <img src={furnitureBannerCardImages[0]} className="object-contain h-full" alt="Modern sofa" />
                             </div>
                             <div className="w-1/3 h-[120px] bg-white rounded-lg shadow-sm flex items-center justify-center overflow-hidden mb-[-10px]">
-                                <img src="https://loremflickr.com/150/120/dining-table,furniture" className="object-contain h-full" alt="Dining table" />
+                                <img src={furnitureBannerCardImages[1]} className="object-contain h-full" alt="Dining table" />
                             </div>
                             <div className="w-1/3 h-[100px] bg-white rounded-lg shadow-sm flex items-center justify-center overflow-hidden">
-                                <img src="https://loremflickr.com/150/100/armchair" className="object-contain h-full" alt="Armchair" />
+                                <img src={furnitureBannerCardImages[2]} className="object-contain h-full" alt="Armchair" />
                             </div>
                         </div>
 

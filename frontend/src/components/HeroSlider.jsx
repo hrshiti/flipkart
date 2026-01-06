@@ -34,7 +34,7 @@ const HeroSlider = () => {
                             <img
                                 src={slide.image}
                                 alt={slide.title || "Banner"}
-                                className="w-full h-full object-cover md:object-fill"
+                                className="w-full h-full object-cover object-center"
                             />
                             {/* Optional Text Overlay if needed, usually baked into image for Flipkart banners, but we can add accessible text */}
                             {/* <div className="absolute top-10 left-10 md:left-20">

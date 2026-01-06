@@ -363,3 +363,9 @@ export const beautyFoodScrollData = [
     { name: "Baby Care", price: "From ₹149", image: sweaterImg },
 ];
 
+export const furnitureBannerCardImages = [
+    furnitureImg,
+    banner2Img,
+    banner3Img
+];
+
