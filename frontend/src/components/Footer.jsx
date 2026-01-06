@@ -14,7 +14,7 @@ const Footer = () => {
                             <a href="#" className="hover:underline text-white font-medium text-[12px]">Contact Us</a>
                             <a href="#" className="hover:underline text-white font-medium text-[12px]">About Us</a>
                             <a href="#" className="hover:underline text-white font-medium text-[12px]">Careers</a>
-                            <a href="#" className="hover:underline text-white font-medium text-[12px]">Flipkart Stories</a>
+                            <a href="#" className="hover:underline text-white font-medium text-[12px]">Kart Stories</a>
                             <a href="#" className="hover:underline text-white font-medium text-[12px]">Press</a>
                             <a href="#" className="hover:underline text-white font-medium text-[12px]">Corporate Information</a>
                         </div>
@@ -52,7 +52,7 @@ const Footer = () => {
                         <div className="flex flex-col gap-2 flex-1">
                             <h4 className="text-[#878787] text-[12px] font-normal mb-1">Mail Us:</h4>
                             <p className="text-[12px] leading-relaxed">
-                                Flipkart Internet Private Limited,<br />
+                                Kart Internet Private Limited,<br />
                                 Buildings Alyssa, Begonia &<br />
                                 Clove Embassy Tech Village,<br />
                                 Outer Ring Road, Devarabeesanahalli Village,<br />
@@ -74,7 +74,7 @@ const Footer = () => {
                         <div className="flex flex-col gap-2 flex-1">
                             <h4 className="text-[#878787] text-[12px] font-normal mb-1">Registered Office Address:</h4>
                             <p className="text-[12px] leading-relaxed">
-                                Flipkart Internet Private Limited,<br />
+                                Kart Internet Private Limited,<br />
                                 Buildings Alyssa, Begonia &<br />
                                 Clove Embassy Tech Village,<br />
                                 Outer Ring Road, Devarabeesanahalli Village,<br />
@@ -106,7 +106,7 @@ const Footer = () => {
                             <HelpCircle className="w-3.5 h-3.5 text-[#ffc200]" />
                             <span className="text-white hover:underline cursor-pointer">Help Center</span>
                         </div>
-                        <span className="text-white">© 2007-2024 Flipkart.com</span>
+                        <span className="text-white">© 2007-2024 Kart.com</span>
                     </div>
 
                     <div className="flex items-center">
