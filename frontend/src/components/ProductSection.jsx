@@ -6,7 +6,7 @@ import { smartphoneDeals } from '../data/mockData';
 const ProductSection = ({
     title = "Best deals on smartphones",
     items = smartphoneDeals,
-    adImage = "https://picsum.photos/seed/phone-ad/300/450"
+    adImage = "https://loremflickr.com/300/450/smartphone,sale"
 }) => {
     return (
         <div className="bg-gray-100 py-2">

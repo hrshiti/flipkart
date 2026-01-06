@@ -37,7 +37,7 @@ function App() {
         <ProductSection
           title="Top Deals on Electronics"
           items={electronicsDeals}
-          adImage="https://picsum.photos/seed/electronics-ad/300/450"
+          adImage="https://loremflickr.com/300/450/electronics,sale"
         />
         <FeaturedGrid items={weddingGridItems} />
         <FurnitureDeals
