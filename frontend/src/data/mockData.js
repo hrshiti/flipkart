@@ -1,42 +1,71 @@
 
+import athleticShoesImg from '../assets/flipkartimages/athlatic shoes.png';
+import beltImg from '../assets/flipkartimages/belt.png';
+import blazerImg from '../assets/flipkartimages/blazer.png';
+import blueJeansImg from '../assets/flipkartimages/blue jeans.png';
+import denimJacketImg from '../assets/flipkartimages/denim jacket.png';
+import gownImg from '../assets/flipkartimages/gown.png';
+import heelsImg from '../assets/flipkartimages/heals.png';
+import leatherBagImg from '../assets/flipkartimages/leather bag.png';
+import sneakersImg from '../assets/flipkartimages/sneakers.png';
+import watchImg from '../assets/flipkartimages/stylish watch.png';
+import summerDressImg from '../assets/flipkartimages/summer dress.png';
+import sunglassesImg from '../assets/flipkartimages/sunglass.png';
+import sweaterImg from '../assets/flipkartimages/sweater.png';
+import trackPantsImg from '../assets/flipkartimages/track pants.png';
+import whiteTshirtImg from '../assets/flipkartimages/white t shirt.png';
+import winterScarfImg from '../assets/flipkartimages/winter scarf.png';
+import banner1Img from '../assets/flipkartimages/banner1.jpg';
+import banner2Img from '../assets/flipkartimages/banner2.jpeg';
+import banner3Img from '../assets/flipkartimages/banner3.jpeg';
+
 export const categories = [
-    { name: "Minutes", icon: "https://loremflickr.com/128/128/delivery,scooter" },
-    { name: "Mobiles & Tablets", icon: "https://loremflickr.com/128/128/smartphone,android" },
-    { name: "Fashion", icon: "https://loremflickr.com/128/128/fashion,clothing" },
-    { name: "Electronics", icon: "https://loremflickr.com/128/128/electronics,gadgets" },
-    { name: "TVs & Appliances", icon: "https://loremflickr.com/128/128/television,appliance" },
-    { name: "Home & Furniture", icon: "https://loremflickr.com/128/128/furniture,sofa" },
-    { name: "Flight Bookings", icon: "https://loremflickr.com/128/128/airplane,flight" },
-    { name: "Beauty, Food..", icon: "https://loremflickr.com/128/128/cosmetics,food" },
-    { name: "Grocery", icon: "https://loremflickr.com/128/128/grocery,vegetables" },
+    { name: "Minutes", icon: trackPantsImg },
+    { name: "Mobiles & Tablets", icon: sneakersImg },
+    { name: "Fashion", icon: summerDressImg },
+    { name: "Electronics", icon: watchImg },
+    { name: "TVs & Appliances", icon: denimJacketImg },
+    { name: "Home & Furniture", icon: winterScarfImg },
+    { name: "Flight Bookings", icon: sunglassesImg },
+    { name: "Beauty, Food..", icon: gownImg },
+    { name: "Grocery", icon: leatherBagImg },
 ];
 
 export const heroSlides = [
     {
         id: 1,
-        image: "https://loremflickr.com/1600/270/smartphone,offer",
-        title: "realme 16 Pro 5G",
-        subtitle: "From ₹28,999*",
-        offer: "Pre-Book Now",
-        tag: "200MP Portrait Master",
+        image: banner1Img,
+        title: "Big Savings on Fashion",
+        subtitle: "Up to 70% Off",
+        offer: "Shop Now",
+        tag: "Best of Styles",
     },
     {
         id: 2,
-        image: "https://loremflickr.com/1600/270/shopping,sale",
+        image: banner2Img,
+        title: "Electronics Bonanza",
+        subtitle: "Top Deals on Gadgets",
+        offer: "Grab Now",
+        tag: "Latest Tech",
     },
     {
         id: 3,
-        image: "https://loremflickr.com/1600/270/electronics,new",
+        image: banner3Img,
+        title: "Home & Furniture Sale",
+        subtitle: "Makeover Your Home",
+        offer: "Discover Now",
+        tag: "Comfort & Style",
     }
 ];
 
 export const smartphoneDeals = [
-    { name: "iPhone 15", image: "https://loremflickr.com/312/312/iphone,smartphone", price: "From ₹65,999" },
-    { name: "Galaxy S24", image: "https://loremflickr.com/312/312/samsung,smartphone", price: "From ₹74,999" },
-    { name: "moto g04", image: "https://loremflickr.com/312/312/motorola,phone", price: "From ₹6,999" },
-    { name: "edge 40 neo", image: "https://loremflickr.com/312/312/android,phone", price: "From ₹22,999" },
-    { name: "vivo T2x 5G", image: "https://loremflickr.com/312/312/vivo,phone", price: "From ₹11,999" },
-    { name: "POCO C65", image: "https://loremflickr.com/312/312/poco,phone", price: "From ₹7,999" },
+    // Using remaining local assets images which are not already used in top categories
+    { name: "iPhone 15", image: blazerImg, price: "From ₹65,999" },
+    { name: "Galaxy S24", image: athleticShoesImg, price: "From ₹74,999" },
+    { name: "moto g04", image: blueJeansImg, price: "From ₹6,999" },
+    { name: "edge 40 neo", image: whiteTshirtImg, price: "From ₹22,999" },
+    { name: "vivo T2x 5G", image: sweaterImg, price: "From ₹11,999" },
+    { name: "POCO C65", image: beltImg, price: "From ₹7,999" },
 ];
 
 export const electronicsDeals = [
@@ -54,21 +83,21 @@ export const featuredGridItems = [
         tag: "Chill-ready winter fits",
         title: "Fort Collins, Wildcraft...",
         offer: "Min. 55% Off",
-        image: "https://loremflickr.com/612/612/winter,jacket"
+        image: sweaterImg
     },
     {
         id: 2,
         tag: "Ethnic styles, redefined",
         title: "Libas, Indo Era & more",
         offer: "Min. 70% Off",
-        image: "https://loremflickr.com/612/612/ethnic,indian-wear"
+        image: gownImg
     },
     {
         id: 3,
         tag: "Flex your sporty side",
         title: "PUMA, ADIDAS & more",
         offer: "Min. 60% Off",
-        image: "https://loremflickr.com/612/612/sport,shoes"
+        image: athleticShoesImg
     },
     {
         id: 4,
@@ -154,17 +183,17 @@ export const homeDecor = [
 ];
 
 export const clothingBestSellers = [
-    { name: "Men's Shirts", offer: "Min. 50% Off", image: "https://loremflickr.com/612/612/mens-shirt,clothing" },
-    { name: "Women's Kurtas", offer: "Min. 60% Off", image: "https://loremflickr.com/612/612/kurta,ethnic" },
-    { name: "Jeans", offer: "Top Sellers", image: "https://loremflickr.com/612/612/jeans,denim" },
-    { name: "T-Shirts", offer: "Min. 70% Off", image: "https://loremflickr.com/612/612/tshirt,casual" },
+    { name: "Men's Shirts", offer: "Min. 50% Off", image: whiteTshirtImg },
+    { name: "Women's Kurtas", offer: "Min. 60% Off", image: gownImg },
+    { name: "Jeans", offer: "Top Sellers", image: blueJeansImg },
+    { name: "T-Shirts", offer: "Min. 70% Off", image: summerDressImg },
 ];
 
 export const fashionAccessories = [
-    { name: "Watches", offer: "Top Deals", image: "https://loremflickr.com/612/612/watch,accessory" },
-    { name: "Handbags", offer: "Widest Range", image: "https://loremflickr.com/612/612/handbag,fashion" },
-    { name: "Sunglasses", offer: "Best Deals", image: "https://loremflickr.com/612/612/sunglasses,style" },
-    { name: "Belts & Wallets", offer: "Min. 50% Off", image: "https://loremflickr.com/612/612/wallet,belt" },
+    { name: "Watches", offer: "Top Deals", image: watchImg },
+    { name: "Handbags", offer: "Widest Range", image: leatherBagImg },
+    { name: "Sunglasses", offer: "Best Deals", image: sunglassesImg },
+    { name: "Belts & Wallets", offer: "Min. 50% Off", image: beltImg },
 ];
 
 export const furnitureScrollData = [
