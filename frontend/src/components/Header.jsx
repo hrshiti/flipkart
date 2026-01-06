@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Search, ShoppingCart, CircleUserRound, Store, MoreVertical, ChevronDown, Menu } from 'lucide-react';
+import { Search, ShoppingCart, CircleUserRound, Store, MoreVertical, ChevronDown, Menu, Package, Heart, Gift, CreditCard } from 'lucide-react';
 
 const Header = () => {
     return (
@@ -33,12 +33,47 @@ const Header = () => {
                 <div className="flex items-center gap-6 xl:gap-8">
 
                     {/* Login */}
-                    <div className="flex items-center gap-2 cursor-pointer hover:bg-blue-50 px-2 py-1.5 rounded p-group group relative">
-                        <CircleUserRound className="w-6 h-6 text-gray-700" />
-                        <span className="text-base font-medium text-gray-800">Login</span>
-                        <ChevronDown className="w-4 h-4 text-gray-700 group-hover:rotate-180 transition-transform duration-200" />
+                    <div className="flex items-center gap-2 cursor-pointer hover:bg-blue-600 hover:text-white px-3 py-2 rounded-lg group relative transition-colors duration-200">
+                        <CircleUserRound className="w-5 h-5 group-hover:text-white text-gray-700" />
+                        <span className="text-base font-medium group-hover:text-white text-gray-800">Login</span>
+                        <ChevronDown className="w-4 h-4 group-hover:text-white text-gray-700 group-hover:rotate-180 transition-transform duration-200" />
 
-                        {/* Login Dropdown (Hidden by default, shown on group hover could be added here) */}
+                        {/* Login Dropdown */}
+                        <div className="absolute top-full left-0 mt-[1px] w-[280px] bg-white rounded shadow-xl border border-gray-100 hidden group-hover:block z-[60] cursor-default">
+                            {/* Triangle Tip moved to CSS or simple layout adjustments if needed, usually just absolute positioning works */}
+
+                            <div className="p-4 flex justify-between items-center border-b border-gray-100">
+                                <span className="text-sm font-medium text-gray-900">New customer?</span>
+                                <span className="text-sm font-semibold text-blue-600 hover:underline cursor-pointer">Sign Up</span>
+                            </div>
+
+                            <ul className="py-2">
+                                <li className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 cursor-pointer text-gray-700 text-sm font-medium border-b border-gray-50 last:border-0">
+                                    <CircleUserRound className="w-4 h-4 text-blue-600" />
+                                    <span>My Profile</span>
+                                </li>
+                                <li className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 cursor-pointer text-gray-700 text-sm font-medium border-b border-gray-50 last:border-0">
+                                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" alt="Plus" className="w-4 h-4 object-contain" />
+                                    <span>Flipkart Plus Zone</span>
+                                </li>
+                                <li className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 cursor-pointer text-gray-700 text-sm font-medium border-b border-gray-50 last:border-0">
+                                    <Package className="w-4 h-4 text-blue-600" />
+                                    <span>Orders</span>
+                                </li>
+                                <li className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 cursor-pointer text-gray-700 text-sm font-medium border-b border-gray-50 last:border-0">
+                                    <Heart className="w-4 h-4 text-blue-600" />
+                                    <span>Wishlist</span>
+                                </li>
+                                <li className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 cursor-pointer text-gray-700 text-sm font-medium border-b border-gray-50 last:border-0">
+                                    <Gift className="w-4 h-4 text-blue-600" />
+                                    <span>Rewards</span>
+                                </li>
+                                <li className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 cursor-pointer text-gray-700 text-sm font-medium">
+                                    <CreditCard className="w-4 h-4 text-blue-600" />
+                                    <span>Gift Cards</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     {/* Cart */}

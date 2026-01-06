@@ -19,17 +19,145 @@ import banner1Img from '../assets/flipkartimages/banner1.jpg';
 import banner2Img from '../assets/flipkartimages/banner2.jpeg';
 import banner3Img from '../assets/flipkartimages/banner3.jpeg';
 
+// Category specific images
+import electronicsImg from '../assets/flipkartimages/electronics.jpeg';
+import fashionImg from '../assets/flipkartimages/fashion.jpg';
+import flightImg from '../assets/flipkartimages/flight.jpeg';
+import furnitureImg from '../assets/flipkartimages/furniture.jpeg';
+import groceryImg from '../assets/flipkartimages/grocery.jpeg';
+import mobilesImg from '../assets/flipkartimages/mobiles.jpeg';
+
 export const categories = [
-    { name: "Minutes", icon: trackPantsImg },
-    { name: "Mobiles & Tablets", icon: sneakersImg },
-    { name: "Fashion", icon: summerDressImg },
-    { name: "Electronics", icon: watchImg },
-    { name: "TVs & Appliances", icon: denimJacketImg },
-    { name: "Home & Furniture", icon: winterScarfImg },
-    { name: "Flight Bookings", icon: sunglassesImg },
+    { name: "Minutes", icon: watchImg },
+    { name: "Mobiles & Tablets", icon: mobilesImg },
+    { name: "Fashion", icon: fashionImg },
+    { name: "Electronics", icon: electronicsImg },
+    { name: "TVs & Appliances", icon: banner2Img },
+    { name: "Home & Furniture", icon: furnitureImg },
+    { name: "Flight Bookings", icon: flightImg },
     { name: "Beauty, Food..", icon: gownImg },
-    { name: "Grocery", icon: leatherBagImg },
+    { name: "Grocery", icon: groceryImg },
 ];
+
+export const categoryDropdowns = {
+    "Fashion": {
+        sections: [
+            {
+                heading: "Men's Top Wear",
+                items: ["Men's T-Shirts", "Men's Casual Shirts", "Men's Formal Shirts", "Men's Kurtas", "Men's Ethnic Sets", "Men's Blazers", "Men's Raincoat", "Men's Windcheaters", "Men's Suit", "Men's Fabrics"]
+            },
+            {
+                heading: "Women's Western",
+                items: ["Women's Tops", "Women's Dresses", "Women's T-shirts", "Women's Jeans", "Women's Nightweare", "Women's Bathrobes", "Women's Jumpsuits", "Women's Dungarees", "Women's Winter Wear"]
+            },
+            {
+                heading: "Men's Bottom Wear",
+                items: ["Men's Jeans", "Men's Trousers", "Men's Trackpants", "Men's Shorts", "Men's Cargos", "Men's Three Fourths", "Men's Boxers", "Men's Trunk & Vests"]
+            }
+        ]
+    },
+    "Mobiles & Tablets": {
+        sections: [
+            {
+                heading: "Mobiles",
+                items: ["Mi", "Realme", "Samsung", "Infinix", "OPPO", "Apple", "Vivo", "Honor", "Asus", "Poco X2", "realme Narzo 10", "Infinix Hot 9", "IQOO 3", "iPhone SE", "Motorola razr", "realme Narzo 10A", "Motorola g8 power lite"]
+            },
+            {
+                heading: "Mobile Accessories",
+                items: ["Mobile Cases", "Headphones & Headsets", "Power Banks", "Screenguards", "Memory Cards", "Smart Headphones", "Mobile Cables", "Mobile Chargers", "Mobile Holders"]
+            }
+        ]
+    },
+    "Electronics": {
+        sections: [
+            {
+                heading: "Audio",
+                items: ["Bluetooth Headphones", "Wired Headphones", "True Wireless Earbuds", "Bluetooth Speakers", "Soundbars", "Home Theatres", "TV Streaming Device", "Remote Control"]
+            },
+            {
+                heading: "Cameras & Accessories",
+                items: ["DSLR & Mirrorless", "Compact & Bridge Cameras", "Sports & Action", "Camera Accessories", "Lens", "Tripods", "Camera Bags"]
+            },
+            {
+                heading: "Computer Peripherals",
+                items: ["Printers", "Monitors", "Projectors", "Portable Projectors", "Ink Cartridges", "Ink Bottles", "Mouse", "Keyboards", "Power Banks"]
+            }
+        ]
+    },
+    "TVs & Appliances": {
+        sections: [
+            {
+                heading: "Televisions",
+                items: ["Screen Guards", "Playstation Consoles", "Playstation Games", "Playstation Controllers", "Mouse", "Gaming Keyboards", "Xbox Consoles", "Xbox Games"]
+            },
+            {
+                heading: "Air Conditioners",
+                items: ["Split ACs", "Window ACs", "Inverter ACs", "Portable ACs", "Fixed Speed ACs"]
+            },
+            {
+                heading: "Kitchen Appliances",
+                items: ["Microwave Ovens", "Oven Toaster Grills (OTG)", "Juicer/Mixer/Grinder", "Electric Kettle", "Induction Cooktops", "Chimneys", "Hand Blenders", "Sandwich Makers", "Pop Up Toasters"]
+            }
+        ]
+    },
+    "Home & Furniture": {
+        sections: [
+            {
+                heading: "Kitchen & Dining",
+                items: ["Cookware", "Knives, Choppers & Cutters", "Gas Stoves", "Tiffins", "Bakeware", "Pressure Cookers", "Flasks", "Casseroles", "Kitchen Tools", "Tableware & Dinnerware", "Containers & Bottles", "Coffee Mugs"]
+            },
+            {
+                heading: "Furniture",
+                items: ["Beds", "Sofas", "Dining Tables", "Chairs", "TV Units", "Shoe Racks", "Cupboards", "Bean Bags", "Mattresses"]
+            },
+            {
+                heading: "Home Decor",
+                items: ["Paintings", "Clocks", "Wall Shelves", "Stickers", "Showpieces", "Photo Frames", "Diya", "Candles & Stands", "Vases", "Flowers"]
+            }
+        ]
+    },
+    "Beauty, Food..": {
+        sections: [
+            {
+                heading: "Beauty & Grooming",
+                items: ["Deodorants", "Perfumes", "Make Up", "Hair Care", "Skin Care", "Body Care", "Personal Care & Grooming"]
+            },
+            {
+                heading: "Food & Drinks",
+                items: ["Beverages", "Nuts & Dry Fruits", "Cooking Essentials", "Snacks Corner", "Breakfast Items", "Chocolates", "Sweets Store", "Jams, Honey & Spreads", "Ready to Cook"]
+            }
+        ]
+    },
+    "Grocery": {
+        sections: [
+            {
+                heading: "Staples",
+                items: ["Dals & Pulses", "Ghee & Oils", "Atta & Flours", "Masalas & Spices", "Rice & Rice Products", "Dry Fruits, Nuts & Seeds", "Sugar, Jaggery & Salt"]
+            },
+            {
+                heading: "Snacks & Beverages",
+                items: ["Biscuits", "Chips, Namkeen & Snacks", "Tea", "Coffee", "Fruit Juices", "Squash & Syrups", "Soft Drinks", "Health Drinks", "Energy Drinks"]
+            }
+        ]
+    },
+    // Default for others
+    "Minutes": {
+        sections: [
+            {
+                heading: "More on Minutes",
+                items: ["Prepaid Recharge", "Postpaid Bill Payment", "Broadband Bill Payment", "DTH Recharge", "Electricity Bill Payment"]
+            }
+        ]
+    },
+    "Flight Bookings": {
+        sections: [
+            {
+                heading: "Travel",
+                items: ["Flight Bookings", "Bus Bookings", "Hotel Bookings", "Holiday Packages", "Train Bookings"]
+            }
+        ]
+    }
+};
 
 export const heroSlides = [
     {
@@ -59,22 +187,21 @@ export const heroSlides = [
 ];
 
 export const smartphoneDeals = [
-    // Using remaining local assets images which are not already used in top categories
-    { name: "iPhone 15", image: blazerImg, price: "From ₹65,999" },
-    { name: "Galaxy S24", image: athleticShoesImg, price: "From ₹74,999" },
-    { name: "moto g04", image: blueJeansImg, price: "From ₹6,999" },
-    { name: "edge 40 neo", image: whiteTshirtImg, price: "From ₹22,999" },
-    { name: "vivo T2x 5G", image: sweaterImg, price: "From ₹11,999" },
-    { name: "POCO C65", image: beltImg, price: "From ₹7,999" },
+    { name: "Top Mirrorless Cameras", image: electronicsImg, price: "Shop Now!" },
+    { name: "Printers", image: banner2Img, price: "From ₹2336" },
+    { name: "Monitors", image: banner3Img, price: "From ₹6599" },
+    { name: "Best of Shavers", image: leatherBagImg, price: "From ₹1,699" },
+    { name: "Power Banks", image: mobilesImg, price: "Grab Now" },
+    { name: "Smartwatches", image: watchImg, price: "From ₹1,299" },
 ];
 
 export const electronicsDeals = [
-    { name: "Noise Smartwatch", image: "https://loremflickr.com/312/312/smartwatch,wearable", price: "From ₹1,299" },
-    { name: "Sony Headphones", image: "https://loremflickr.com/312/312/sony,headphones", price: "From ₹4,999" },
-    { name: "Canon Cameras", image: "https://loremflickr.com/312/312/canon,camera", price: "From ₹45,999" },
-    { name: "HP Laptops", image: "https://loremflickr.com/312/312/hp,laptop", price: "From ₹35,999" },
-    { name: "Gaming Monitors", image: "https://loremflickr.com/312/312/gaming,monitor", price: "From ₹12,999" },
-    { name: "Power Banks", image: "https://loremflickr.com/312/312/powerbank,battery", price: "From ₹999" },
+    { name: "Mobile Cases", image: mobilesImg, price: "From ₹129" },
+    { name: "Headphones", image: watchImg, price: "From ₹999" },
+    { name: "Cameras", image: electronicsImg, price: "From ₹45,999" },
+    { name: "Laptops", image: banner2Img, price: "From ₹35,999" },
+    { name: "Gaming Monitors", image: banner3Img, price: "From ₹12,999" },
+    { name: "Power Banks", image: mobilesImg, price: "From ₹999" },
 ];
 
 export const featuredGridItems = [
@@ -104,21 +231,21 @@ export const featuredGridItems = [
         tag: "Helmets, riding jackets...",
         title: "Riding essentials",
         offer: "From ₹799",
-        image: "https://loremflickr.com/612/612/motorcycle,helmet"
+        image: denimJacketImg
     },
     {
         id: 5,
-        tag: "Revel, Intern & more",
-        title: "Acoustic guitars",
+        tag: "Fashion Forward",
+        title: "Latest Trends",
         offer: "Up to 65% Off",
-        image: "https://loremflickr.com/612/612/acoustic-guitar"
+        image: summerDressImg
     },
     {
         id: 6,
-        tag: "NIVEA, Plix...",
-        title: "Winter care",
+        tag: "Winter Care",
+        title: "Cozy Comfort",
         offer: "Under ₹349",
-        image: "https://loremflickr.com/612/612/skincare,cream"
+        image: winterScarfImg
     }
 ];
 
@@ -128,58 +255,58 @@ export const weddingGridItems = [
         tag: "Wedding Special",
         title: "Designer Sarees",
         offer: "Min. 60% Off",
-        image: "https://loremflickr.com/612/612/saree,wedding"
+        image: gownImg
     },
     {
         id: 2,
         tag: "Groom's Choice",
         title: "Sherwanis & Suits",
         offer: "Min. 40% Off",
-        image: "https://loremflickr.com/612/612/sherwani,groom"
+        image: blazerImg
     },
     {
         id: 3,
         tag: "Jewelry Essentials",
         title: "Sets, Rings & more",
         offer: "Up to 80% Off",
-        image: "https://loremflickr.com/612/612/jewelry,necklace"
+        image: sunglassesImg
     },
     {
         id: 4,
         tag: "Footwear",
         title: "Heels & Mojaris",
         offer: "Under ₹999",
-        image: "https://loremflickr.com/612/612/heels,footwear"
+        image: heelsImg
     },
     {
         id: 5,
         tag: "Home Decor",
         title: "Lights & Flowers",
         offer: "From ₹199",
-        image: "https://loremflickr.com/612/612/decor,lights"
+        image: furnitureImg
     },
     {
         id: 6,
         tag: "Gifting",
         title: "Gift Sets",
         offer: "Min 20% Off",
-        image: "https://loremflickr.com/612/612/gift,box"
+        image: beltImg
     }
 ];
 
 
 export const furnitureBestDeals = [
-    { name: "Collapsible Wardrobes", offer: "Min. 50% Off", image: "https://loremflickr.com/612/612/wardrobe,closet" },
-    { name: "Home Temple", offer: "Min. 50% Off", image: "https://loremflickr.com/612/612/home-temple,altar" },
-    { name: "Kitchen Trolleys", offer: "Top Sellers", image: "https://loremflickr.com/612/612/kitchen,trolley" },
-    { name: "Hammock Swings", offer: "Min. 50% Off", image: "https://loremflickr.com/612/612/hammock,swing" },
+    { name: "Wardrobes", offer: "Min. 50% Off", image: furnitureImg },
+    { name: "Home Temple", offer: "Min. 50% Off", image: banner3Img },
+    { name: "Kitchen Trolleys", offer: "Top Sellers", image: banner2Img },
+    { name: "Hammock Swings", offer: "Min. 50% Off", image: furnitureImg },
 ];
 
 export const homeDecor = [
-    { name: "Mats", offer: "Top Deals", image: "https://loremflickr.com/612/612/doormat,rug" },
-    { name: "Wall Clocks", offer: "Widest Range", image: "https://loremflickr.com/612/612/wall-clock,decor" },
-    { name: "Blankets", offer: "Best Deals", image: "https://loremflickr.com/612/612/blanket,warm" },
-    { name: "Water Bottles & Flasks", offer: "Min. 50% Off", image: "https://loremflickr.com/612/612/water-bottle,flask" },
+    { name: "Mats", offer: "Top Deals", image: banner1Img },
+    { name: "Wall Clocks", offer: "Widest Range", image: watchImg },
+    { name: "Blankets", offer: "Best Deals", image: winterScarfImg },
+    { name: "Water Bottles", offer: "Min. 50% Off", image: leatherBagImg },
 ];
 
 export const clothingBestSellers = [
@@ -197,41 +324,42 @@ export const fashionAccessories = [
 ];
 
 export const furnitureScrollData = [
-    { name: "Bean Bag", price: "from ₹999", image: "https://loremflickr.com/312/312/bean-bag,chair" },
-    { name: "Portable laptop table", price: "from ₹399", image: "https://loremflickr.com/312/312/laptop-table,desk" },
-    { name: "Wardrobes", price: "From ₹8999", image: "https://loremflickr.com/312/312/wardrobe,closet" },
-    { name: "TV Units", price: "from ₹1999", image: "https://loremflickr.com/312/312/tv-unit,media" },
-    { name: "Wardrobe", price: "From ₹9,999", image: "https://loremflickr.com/312/312/wardrobe,furniture" },
-    { name: "Office Tables", price: "From ₹2,999", image: "https://loremflickr.com/312/312/office-table,desk" },
-    { name: "Chairs", price: "From ₹2990", image: "https://loremflickr.com/312/312/office-chair" },
+    { name: "Bean Bag", price: "from ₹999", image: furnitureImg },
+    { name: "Portable laptop table", price: "from ₹399", image: banner2Img },
+    { name: "Wardrobes", price: "From ₹8999", image: furnitureImg },
+    { name: "TV Units", price: "from ₹1999", image: electronicsImg },
+    { name: "Wardrobe", price: "From ₹9,999", image: furnitureImg },
+    { name: "Office Tables", price: "From ₹2,999", image: banner3Img },
+    { name: "Chairs", price: "From ₹2990", image: furnitureImg },
 ];
 
 export const appliancesScrollData = [
-    { name: "Best-selling Refrigerators", price: "From ₹9,990", image: "https://loremflickr.com/312/312/refrigerator,appliance" },
-    { name: "Fully automatics", price: "Shop now!", image: "https://loremflickr.com/312/312/washing-machine" },
-    { name: "Kitchen Essentials", price: "From ₹1249", image: "https://loremflickr.com/312/312/kitchen,appliances" },
-    { name: "Microwave Ovens", price: "From ₹3,999", image: "https://loremflickr.com/312/312/microwave,oven" },
-    { name: "Home Essentials", price: "Shop Now!", image: "https://loremflickr.com/312/312/water-purifier,appliance" },
-    { name: "Fans & Geysers", price: "From ₹799", image: "https://loremflickr.com/312/312/fan,geyser" },
-    { name: "Lowest Price Ever", price: "From ₹2,999/M*", image: "https://loremflickr.com/312/312/air-conditioner,ac" },
+    { name: "Best-selling Refrigerators", price: "From ₹9,990", image: electronicsImg },
+    { name: "Fully automatics", price: "Shop now!", image: banner2Img },
+    { name: "Kitchen Essentials", price: "From ₹1249", image: groceryImg },
+    { name: "Microwave Ovens", price: "From ₹3,999", image: electronicsImg },
+    { name: "Home Essentials", price: "Shop Now!", image: banner3Img },
+    { name: "Fans & Geysers", price: "From ₹799", image: electronicsImg },
+    { name: "Lowest Price Ever", price: "From ₹2,999/M*", image: banner2Img },
 ];
 
 export const booksToysScrollData = [
-    { name: "Best Selling Books", price: "From ₹99", image: "https://loremflickr.com/312/312/books,reading" },
-    { name: "Remote Control Toys", price: "Up to 70% Off", image: "https://loremflickr.com/312/312/remote-control,toy" },
-    { name: "Board Games", price: "From ₹199", image: "https://loremflickr.com/312/312/board-game" },
-    { name: "Soft Toys", price: "From ₹149", image: "https://loremflickr.com/312/312/teddy-bear" },
-    { name: "Educational Toys", price: "Min 40% Off", image: "https://loremflickr.com/312/312/educational-toy" },
-    { name: "Stationery", price: "From ₹49", image: "https://loremflickr.com/312/312/stationery,pens" },
-    { name: "Outdoor Sports", price: "From ₹299", image: "https://loremflickr.com/312/312/outdoor,sports" },
+    { name: "Best Selling Books", price: "From ₹99", image: banner1Img },
+    { name: "Remote Control Toys", price: "Up to 70% Off", image: electronicsImg },
+    { name: "Board Games", price: "From ₹199", image: banner3Img },
+    { name: "Soft Toys", price: "From ₹149", image: sweaterImg },
+    { name: "Educational Toys", price: "Min 40% Off", image: banner2Img },
+    { name: "Stationery", price: "From ₹49", image: groceryImg },
+    { name: "Outdoor Sports", price: "From ₹299", image: athleticShoesImg },
 ];
 
 export const beautyFoodScrollData = [
-    { name: "Makeup Bestsellers", price: "From ₹499", image: "https://loremflickr.com/312/312/makeup,cosmetics" },
-    { name: "Premium Fragrances", price: "Min 40% Off", image: "https://loremflickr.com/312/312/perfume,fragrance" },
-    { name: "Hair Care", price: "From ₹199", image: "https://loremflickr.com/312/312/hair-care,shampoo" },
-    { name: "Skincare", price: "Up to 60% Off", image: "https://loremflickr.com/312/312/skincare,face-cream" },
-    { name: "Chocolates & Snacks", price: "From ₹99", image: "https://loremflickr.com/312/312/chocolates,snacks" },
-    { name: "Tea & Coffee", price: "Min 30% Off", image: "https://loremflickr.com/312/312/coffee,tea" },
-    { name: "Baby Care", price: "From ₹149", image: "https://loremflickr.com/312/312/baby-care,products" },
+    { name: "Makeup Bestsellers", price: "From ₹499", image: gownImg },
+    { name: "Premium Fragrances", price: "Min 40% Off", image: sunglassesImg },
+    { name: "Hair Care", price: "From ₹199", image: summerDressImg },
+    { name: "Skincare", price: "Up to 60% Off", image: winterScarfImg },
+    { name: "Chocolates & Snacks", price: "From ₹99", image: groceryImg },
+    { name: "Tea & Coffee", price: "Min 30% Off", image: groceryImg },
+    { name: "Baby Care", price: "From ₹149", image: sweaterImg },
 ];
+
