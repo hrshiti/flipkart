@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Search, ShoppingCart, CircleUserRound, Store, MoreVertical, ChevronDown, Menu, Package, Heart, Gift, CreditCard } from 'lucide-react';
+import logo from '../assets/flipkartlogo.jpeg';
 
 const Header = () => {
     return (
@@ -10,9 +10,9 @@ const Header = () => {
                 <div className="flex items-center gap-1 min-w-[120px]">
                     <div className="flex flex-col">
                         <img
-                            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
-                            alt="Flipkart"
-                            className="h-10 object-contain w-[160px]" // Adjusted to match the "Explore Plus" new logo style
+                            src={logo}
+                            alt="Kart"
+                            className="h-14 object-contain min-w-[150px]" // Adjusted to match the "Explore Plus" new logo style
                         />
                     </div>
                 </div>
@@ -54,7 +54,7 @@ const Header = () => {
                                 </li>
                                 <li className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 cursor-pointer text-gray-700 text-sm font-medium border-b border-gray-50 last:border-0">
                                     <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" alt="Plus" className="w-4 h-4 object-contain" />
-                                    <span>Flipkart Plus Zone</span>
+                                    <span>Kart Plus Zone</span>
                                 </li>
                                 <li className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 cursor-pointer text-gray-700 text-sm font-medium border-b border-gray-50 last:border-0">
                                     <Package className="w-4 h-4 text-blue-600" />

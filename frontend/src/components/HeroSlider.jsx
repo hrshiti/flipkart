@@ -36,7 +36,7 @@ const HeroSlider = () => {
                                 alt={slide.title || "Banner"}
                                 className="w-full h-full object-cover object-center"
                             />
-                            {/* Optional Text Overlay if needed, usually baked into image for Flipkart banners, but we can add accessible text */}
+                            {/* Optional Text Overlay if needed, usually baked into image for Kart banners, but we can add accessible text */}
                             {/* <div className="absolute top-10 left-10 md:left-20">
                   <h2 className="text-3xl md:text-5xl font-bold text-gray-900">{slide.title}</h2>
               </div> */}
